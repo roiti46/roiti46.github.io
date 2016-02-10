@@ -1,0 +1,28 @@
+body {
+  background-color: #eed;
+  text-align: center;
+}
+
+tbody {
+  text-align: center;
+}
+
+tbody th {
+  color: white;
+}
+
+tbody tr.row:nth-child(odd) {
+  background-color: #eee;
+}
+
+tbody tr.row:nth-child(even) {
+  background-color: white;
+}
+
+tbody tr.thead {
+  background-color: gray;
+}
+
+tbody tr.row:hover {
+  background-color: #ccc;
+}
