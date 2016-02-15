@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Life Game</title>
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lifegame.css" />
+  <link rel="stylesheet" href="../css/default.css" />
+</head>
+<body>
+  <h2>Life Game ver0.01</h2>
+  <div id="main" class="container">
+    <div id="grid"></div>
+    <div id="generation">Generation: <span id="generation_num">0</span></div>
+    <div id="UI">
+      <div>Witdh: <span id="width">20<span></div>
+      <div>Height: <span id="height">20</span></div>
+      <div>Interval: <span id="interval">200</span> ms</div>
+      <div>Periodic: <span id="periodic">true</span></div>
+      <button id="start" disabled class="btn">Start</button>
+      <button id="stop" class="btn">Stop</button>
+      <button id="reset" class="btn">Reset</button>
+    </div>
+  </div>
+
+  <script src="js/jquery/jquery-1.12.0.min.js"></script>
+  <script src="js/bootstrap/bootstrap.min.js"></script>
+  <script src="js/lifegame.js"></script>
+</body>
+</html>
