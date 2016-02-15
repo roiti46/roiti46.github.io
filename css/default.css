@@ -21,6 +21,16 @@ main {
   margin-top: 10px;
 }
 
+#current_position {
+  text-align: left;
+  margin: 2px;
+}
+
+#title {
+  text-align: left;
+  margin-top: 10px;
+}
+
 #sidebar {
   float: left;
   border: 1px solid gray;
