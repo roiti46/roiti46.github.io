@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Memo - git-command</title>
+  <meta name="keyword" content="roiti46,roiti">
+  <link rel="stylesheet" href="../../css/default.css" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://roiti46.github.io/favicon.ico" />
+</head>
+<body>
+<header>
+  <p id="current_position">
+    <a href="../..">Home</a> > <a href="../">Memo</a> > <a href="../index.html">Git</a> > git-command
+  </p>
+  <h2 id="title">git-command</h2>
+</header>
+<main>
+  <div id="sidebar">
+    <p id="sidebar_title">Site map</p>
+    <ul>
+      <li><a href="../../">Home</a></li>
+      <li><a href="../">Memo</a></li>
+      <li><a href="../../misc">Misc</a></li>
+      <li><a href="../../game">Game</a></li>
+    </ul>
+  </div>
+  <div id="contents">
+    <h2 class="content-title">git 1.9.1 command list</h2>
+    <table border=0>
+    <tr><td>add                 </td><td> -- add file contents to index</td></tr>
+    <tr><td>am                  </td><td> -- apply patches from a mailbox</td></tr>
+    <tr><td>apply               </td><td> -- apply patch to files and/or to index</td></tr>
+    <tr><td>archimport          </td><td> -- import an Arch repository into git</td></tr>
+    <tr><td>archive             </td><td> -- create archive of files from named tree</td></tr>
+    <tr><td>bisect              </td><td> -- find, by binary search, change that introduced a bug</td></tr>
+    <tr><td>blame               </td><td> -- show what revision and author last modified each line of a file</td></tr>
+    <tr><td>branch              </td><td> -- list, create, or delete branches</td></tr>
+    <tr><td>bundle              </td><td> -- move objects and refs by archive</td></tr>
+    <tr><td>cat-file            </td><td> -- provide content or type information for repository objects</td></tr>
+    <tr><td>check-attr          </td><td> -- display gitattributes information</td></tr>
+    <tr><td>check-ref-format    </td><td> -- ensure that a reference name is well formed</td></tr>
+    <tr><td>checkout            </td><td> -- checkout branch or paths to working tree</td></tr>
+    <tr><td>checkout-index      </td><td> -- copy files from index to working directory</td></tr>
+    <tr><td>cherry              </td><td> -- find commits not merged upstream</td></tr>
+    <tr><td>cherry-pick         </td><td> -- apply changes introduced by some existing commits</td></tr>
+    <tr><td>citool              </td><td> -- graphical alternative to git commit</td></tr>
+    <tr><td>clean               </td><td> -- remove untracked files from working tree</td></tr>
+    <tr><td>clone               </td><td> -- clone repository into new directory</td></tr>
+    <tr><td>commit              </td><td> -- record changes to repository</td></tr>
+    <tr><td>commit-tree         </td><td> -- create new commit object</td></tr>
+    <tr><td>config              </td><td> -- get and set repository or global options</td></tr>
+    <tr><td>count-objects       </td><td> -- count unpacked objects and display their disk consumption</td></tr>
+    <tr><td>cvsexportcommit     </td><td> -- export a single commit to a CVS checkout</td></tr>
+    <tr><td>cvsimport           </td><td> -- import a CVS "repository" into a git repository</td></tr>
+    <tr><td>cvsserver           </td><td> -- run a CVS server emulator for git</td></tr>
+    <tr><td>daemon              </td><td> -- run a really simple server for git repositories</td></tr>
+    <tr><td>describe            </td><td> -- show most recent tag that is reachable from a commit</td></tr>
+    <tr><td>diff                </td><td> -- show changes between commits, commit and working tree, etc.</td></tr>
+    <tr><td>diff-files          </td><td> -- compare files in working tree and index</td></tr>
+    <tr><td>diff-index          </td><td> -- compare content and mode of blobs between index and repository</td></tr>
+    <tr><td>diff-tree           </td><td> -- compare content and mode of blobs found via two tree objects</td></tr>
+    <tr><td>difftool            </td><td> -- show changes using common diff tools</td></tr>
+    <tr><td>fast-export         </td><td> -- data exporter</td></tr>
+    <tr><td>fast-import         </td><td> -- import information into git directly</td></tr>
+    <tr><td>fetch               </td><td> -- download objects and refs from another repository</td></tr>
+    <tr><td>fetch-pack          </td><td> -- receive missing objects from another repository</td></tr>
+    <tr><td>filter-branch       </td><td> -- rewrite branchers</td></tr>
+    <tr><td>fmt-merge-msg       </td><td> -- produce merge commit message</td></tr>
+    <tr><td>for-each-ref        </td><td> -- output information on each ref</td></tr>
+    <tr><td>format-patch        </td><td> -- prepare patches for e-mail submission</td></tr>
+    <tr><td>fsck                </td><td> -- verify connectivity and validity of objects in database</td></tr>
+    <tr><td>gc                  </td><td> -- cleanup unnecessary files and optimize local repository</td></tr>
+    <tr><td>get-tar-commit-id   </td><td> -- extract commit ID from an archive created using git archive</td></tr>
+    <tr><td>grep                </td><td> -- print lines matching a pattern</td></tr>
+    <tr><td>gui                 </td><td> -- run portable graphical interface to git</td></tr>
+    <tr><td>hash-object         </td><td> -- compute object ID and optionally create a blob from a file</td></tr>
+    <tr><td>help                </td><td> -- display help information about git</td></tr>
+    <tr><td>http-backend        </td><td> -- run a server side implementation of Git over HTTP</td></tr>
+    <tr><td>http-fetch          </td><td> -- download from remote git repository via HTTP</td></tr>
+    <tr><td>http-push           </td><td> -- push objects over HTTP/DAV to another repository</td></tr>
+    <tr><td>imap-send           </td><td> -- send a collection of patches to an IMAP folder</td></tr>
+    <tr><td>index-pack          </td><td> -- build pack index file for an existing packed archive</td></tr>
+    <tr><td>init                </td><td> -- create empty git repository or re-initialize an existing one</td></tr>
+    <tr><td>instaweb            </td><td> -- instantly browse your working repository in gitweb</td></tr>
+    <tr><td>log                 </td><td> -- show commit logs</td></tr>
+    <tr><td>ls-files            </td><td> -- information about files in index/working directory</td></tr>
+    <tr><td>ls-remote           </td><td> -- show references in a remote repository</td></tr>
+    <tr><td>ls-tree             </td><td> -- list contents of a tree object</td></tr>
+    <tr><td>mailinfo            </td><td> -- extract patch and authorship from a single email message</td></tr>
+    <tr><td>mailsplit           </td><td> -- split mbox file into a list of files</td></tr>
+    <tr><td>merge               </td><td> -- join two or more development histories together</td></tr>
+    <tr><td>merge-base          </td><td> -- find as good a common ancestor as possible for a merge</td></tr>
+    <tr><td>merge-file          </td><td> -- run a three-way file merge</td></tr>
+    <tr><td>merge-index         </td><td> -- run merge for files needing merging</td></tr>
+    <tr><td>merge-one-file      </td><td> -- standard helper-program to use with git merge-index</td></tr>
+    <tr><td>merge-tree          </td><td> -- show three-way merge without touching index</td></tr>
+    <tr><td>mergetool           </td><td> -- run merge conflict resolution tools to resolve merge conflicts</td></tr>
+    <tr><td>mktag               </td><td> -- create tag object</td></tr>
+    <tr><td>mktree              </td><td> -- build tree-object from git ls-tree formatted text</td></tr>
+    <tr><td>mv                  </td><td> -- move or rename file, directory, or symlink</td></tr>
+    <tr><td>name-rev            </td><td> -- find symbolic names for given revisions</td></tr>
+    <tr><td>notes               </td><td> -- add or inspect object notes</td></tr>
+    <tr><td>pack-objects        </td><td> -- create packed archive of objects</td></tr>
+    <tr><td>pack-redundant      </td><td> -- find redundant pack files</td></tr>
+    <tr><td>pack-refs           </td><td> -- pack heads and tags for efficient repository access</td></tr>
+    <tr><td>parse-remote        </td><td> -- routines to help parsing remote repository access parameters</td></tr>
+    <tr><td>patch-id            </td><td> -- compute unique ID for a patch</td></tr>
+    <tr><td>prune               </td><td> -- prune all unreachable objects from the object database</td></tr>
+    <tr><td>prune-packed        </td><td> -- remove extra objects that are already in pack files</td></tr>
+    <tr><td>pull                </td><td> -- fetch from and merge with another repository or local branch</td></tr>
+    <tr><td>push                </td><td> -- update remote refs along with associated objects</td></tr>
+    <tr><td>quiltimport         </td><td> -- apply a quilt patchset</td></tr>
+    <tr><td>read-tree           </td><td> -- read tree information into directory index</td></tr>
+    <tr><td>rebase              </td><td> -- fasforward-port local commits to the updated upstream head</td></tr>
+    <tr><td>receive-pack        </td><td> -- receive what is pushed into repository</td></tr>
+    <tr><td>reflog              </td><td> -- manage reflog information</td></tr>
+    <tr><td>relink              </td><td> -- hardlink common objects in local repositories</td></tr>
+    <tr><td>remote              </td><td> -- manage set of tracked repositories</td></tr>
+    <tr><td>repack              </td><td> -- pack unpacked objects in a repository</td></tr>
+    <tr><td>replace             </td><td> -- create, list, delete refs to replace objects</td></tr>
+    <tr><td>request-pull        </td><td> -- generate summary of pending changes</td></tr>
+    <tr><td>rerere              </td><td> -- reuse recorded resolution of conflicted merges</td></tr>
+    <tr><td>reset               </td><td> -- reset current HEAD to specified state</td></tr>
+    <tr><td>rev-list            </td><td> -- list commit object in reverse chronological order</td></tr>
+    <tr><td>rev-parse           </td><td> -- pick out and massage parameters for other git commands</td></tr>
+    <tr><td>revert              </td><td> -- revert existing commits</td></tr>
+    <tr><td>rm                  </td><td> -- remove files from the working tree and from the index</td></tr>
+    <tr><td>send-email          </td><td> -- send collection of patches as emails</td></tr>
+    <tr><td>send-pack           </td><td> -- push objects over git protocol to another repository</td></tr>
+    <tr><td>shell               </td><td> -- restricted login shell for GIT-only SSH access</td></tr>
+    <tr><td>shortlog            </td><td> -- summarize git log output</td></tr>
+    <tr><td>show                </td><td> -- show various types of objects</td></tr>
+    <tr><td>show-branch         </td><td> -- show branches and their commits</td></tr>
+    <tr><td>show-index          </td><td> -- show packed archive index</td></tr>
+    <tr><td>show-ref            </td><td> -- list references in a local repository</td></tr>
+    <tr><td>stash               </td><td> -- stash away changes to dirty working directory</td></tr>
+    <tr><td>status              </td><td> -- show working-tree status</td></tr>
+    <tr><td>stripspace          </td><td> -- filter out empty lines</td></tr>
+    <tr><td>submodule           </td><td> -- initialize, update, or inspect submodules</td></tr>
+    <tr><td>svn                 </td><td> -- bidirectional operation between a Subversion repository and git</td></tr>
+    <tr><td>symbolic-ref        </td><td> -- read and modify symbolic references</td></tr>
+    <tr><td>tag                 </td><td> -- create, list, delete or verify tag object signed with GPG</td></tr>
+    <tr><td>unpack-file         </td><td> -- create temporary file with blob's contents</td></tr>
+    <tr><td>unpack-objects      </td><td> -- unpack objects from packed archive</td></tr>
+    <tr><td>update-index        </td><td> -- register file contents in the working directory to the index</td></tr>
+    <tr><td>update-ref          </td><td> -- update object name stored in a reference safely</td></tr>
+    <tr><td>update-server-info  </td><td> -- update auxiliary information file to help dumb servers</td></tr>
+    <tr><td>upload-archive      </td><td> -- send archive back to git-archive</td></tr>
+    <tr><td>upload-pack         </td><td> -- send objects packed back to git fetch-pack</td></tr>
+    <tr><td>var                 </td><td> -- show git logical variable</td></tr>
+    <tr><td>verify-pack         </td><td> -- validate packed git archive files</td></tr>
+    <tr><td>verify-tag          </td><td> -- check GPG signature of tags</td></tr>
+    <tr><td>whatchanged         </td><td> -- show commit-logs and differences they introduce</td></tr>
+    <tr><td>write-tree          </td><td> -- create tree from the current index</td></tr>
+    </table>
+  </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
