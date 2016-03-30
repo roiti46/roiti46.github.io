@@ -1,5 +1,5 @@
-var W = 20;
-var H = 20;
+var W = 30;
+var H = 30;
 var ALIVE = "alive";
 var DEAD = "dead";
 var generation_num = 0;

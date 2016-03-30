@@ -1,0 +1,21 @@
+#left { text-align: left; }
+#center { text-align: center; }
+#right { text-align: right; }
+
+p.border { border-style: 
+  margin: 20px;
+  border: solid 7px red;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+ }
+
+
+#none { border-style: none }
+#solid { border-style: solid }
+#double { border-style: double }
+#dotted { border-style: dotted }
+#groove { border-style: groove }
+#ridge { border-style: ridge }
+#inset { border-style: inset }
+#outset { border-style: outset }
